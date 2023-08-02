@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Security.Cryptography;
 
-namespace BusinessCoder
+namespace BusinessCoderDotnet
 {
   static class Program
   {
@@ -90,7 +92,7 @@ namespace BusinessCoder
       // Print output
       Console.WriteLine("\n================================== OUTPUT ==================================\n");
       
-      Console.WriteLine("API Call: ");   
+      Console.WriteLine("API Call: ");
       string APICall = Path.Combine(baseServiceUrl, requestQuery);
       for (int i = 0; i < APICall.Length; i += 70)
       {

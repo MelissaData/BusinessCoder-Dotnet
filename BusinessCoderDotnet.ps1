@@ -17,7 +17,7 @@ param(
 # Modify this if you want to use 
 $CurrentPath = $PSScriptRoot
 Set-Location $CurrentPath
-$ProjectPath = "$CurrentPath\BusinessCoder"
+$ProjectPath = "$CurrentPath\BusinessCoderDotnet"
 $BuildPath = "$ProjectPath\Build"
 
 If (!(Test-Path $BuildPath)) {
@@ -46,12 +46,12 @@ if ([string]::IsNullOrEmpty($license)) {
 # Build project
 Write-Host "`n=============================== BUILD PROJECT =============================="
 
-dotnet publish -f="net7.0" -c Release -o $BuildPath BusinessCoder\BusinessCoder.csproj
+dotnet publish -f="net7.0" -c Release -o $BuildPath BusinessCoderDotnet\BusinessCoderDotnet.csproj
 
 # Run project
 if ([string]::IsNullOrEmpty($company) -and [string]::IsNullOrEmpty($addressline1) -and [string]::IsNullOrEmpty($city) -and [string]::IsNullOrEmpty($state) -and [string]::IsNullOrEmpty($postal) -and [string]::IsNullOrEmpty($country)) {
-  dotnet $BuildPath\BusinessCoder.dll --license $license 
+  dotnet $BuildPath\BusinessCoderDotnet.dll --license $license 
 }
 else {
-  dotnet $BuildPath\BusinessCoder.dll --license $license --company $company --addressline1 $addressline1 --city $city --state $state --postal $postal --country $country 
+  dotnet $BuildPath\BusinessCoderDotnet.dll --license $license --company $company --addressline1 $addressline1 --city $city --state $state --postal $postal --country $country 
 }
