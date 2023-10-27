@@ -3,9 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-[Bb]usiness[Cc]oder/[Bb]uild
-[Bb]usiness[Cc]oder/[Bb]in
-[Bb]usiness[Cc]oder/[Oo]bj
+[Bb]usiness[Cc]oder[Dd]otnet/[Bb]uild
+[Bb]usiness[Cc]oder[Dd]otnet/[Bb]in
+[Bb]usiness[Cc]oder[Dd]otnet/[Oo]bj
+[Bb]usiness[Cc]oder[Dd]otnet/[Pp]roperties
 
 # User-specific files
 *.rsuser
