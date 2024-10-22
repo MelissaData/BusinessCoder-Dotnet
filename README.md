@@ -41,8 +41,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Download this project
 ```
-$ git clone https://github.com/MelissaData/BusinessCoder-Dotnet
-$ cd BusinessCoder-Dotnet
+git clone https://github.com/MelissaData/BusinessCoder-Dotnet
+cd BusinessCoder-Dotnet
 ```
 
 ## Windows
@@ -90,15 +90,15 @@ There are two modes:
 
 	The script will prompt the user for input(s), then use the provided input(s) to call the Cloud API. For example:
 	```
-	$ .\BusinessCoderDotnet.ps1
+	.\BusinessCoderDotnet.ps1
 	```
 
 - Command Line 
 
 	You can pass a company, address line 1, city, state, postal code, country, and license string into `-company`, `-addressline1`, `-city`, `-state`, `-postal`, `-country`, and `-license` parameters respectively to test the Cloud API. For example: 
 	```
-    $ .\BusinessCoderDotnet.ps1 -company "Melissa" -addressline1 "22382 Avenida Empresa" -city "Rancho Santa Margarita" -state "CA" -postal "92688" -country "United States"
-    $ .\BusinessCoderDotnet.ps1 -company "Melissa" -addressline1 "22382 Avenida Empresa" -city "Rancho Santa Margarita" -state "CA" -postal "92688" -country "United States" -license "<your_license_string>"
+    .\BusinessCoderDotnet.ps1 -company "Melissa" -addressline1 "22382 Avenida Empresa" -city "Rancho Santa Margarita" -state "CA" -postal "92688" -country "United States"
+    .\BusinessCoderDotnet.ps1 -company "Melissa" -addressline1 "22382 Avenida Empresa" -city "Rancho Santa Margarita" -state "CA" -postal "92688" -country "United States" -license "<your_license_string>"
     ```
 	
 This is the expected output from a successful setup for interactive mode:
@@ -154,15 +154,15 @@ There are two modes:
 
 	The script will prompt the user for input(s), then use the provided input(s) to call the Cloud API. For example:
 	```
-	$ ./BusinessCoderDotnet.sh
+	./BusinessCoderDotnet.sh
 	```
 
 - Command Line 
 
 	You can pass a company, address line 1, city, state, postal code, country, and license string into `--company`, `--addressline1`, `--city`, `--state`, `--postal`, `--country`, and `--license` parameters respectively to test the Cloud API. For example: 
 	```
-    $ ./BusinessCoderDotnet.sh --company "Melissa" --addressline1 "22382 Avenida Empresa" --city "Rancho Santa Margarita" --state "CA" --postal "92688" --country "United States"
-    $ ./BusinessCoderDotnet.sh --company "Melissa" --addressline1 "22382 Avenida Empresa" --city "Rancho Santa Margarita" --state "CA" --postal "92688" --country "United States" --license "<your_license_string>"
+    ./BusinessCoderDotnet.sh --company "Melissa" --addressline1 "22382 Avenida Empresa" --city "Rancho Santa Margarita" --state "CA" --postal "92688" --country "United States"
+    ./BusinessCoderDotnet.sh --company "Melissa" --addressline1 "22382 Avenida Empresa" --city "Rancho Santa Margarita" --state "CA" --postal "92688" --country "United States" --license "<your_license_string>"
 
 This is the expected output from a successful setup for interactive mode:
 
