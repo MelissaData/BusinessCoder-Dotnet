@@ -34,7 +34,7 @@ And return information of the business such as:
 ## Tested Environments
 - Windows 10 64-bit .NET 7.0, Powershell 5.1
 - Ubuntu Linux 20.04.04 LTS 64-bit .NET 7.0
-- Business Coder Cloud API Version 8.0.1.1084
+- Business Coder Cloud API Version 9.0.1.1091
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
